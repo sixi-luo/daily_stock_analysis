@@ -21,19 +21,19 @@ jobs:
     
     steps:
       - name: 🏷️ 标记并关闭过期内容
-        uses: actions/stale@v9
+        uses: actions/stale@v10
         with:
           # ===== Issue 配置 =====
-          days-before-issue-stale: 3
-          days-before-issue-close: 3
+          days-before-issue-stale: 7
+          days-before-issue-close: 7
           stale-issue-label: 'stale'
           stale-issue-message: |
-            👋 这个 Issue 已经 **3 天** 没有活动了。
+            👋 这个 Issue 已经 **7 天** 没有活动了。
             
             如果问题仍然存在，请回复说明最新情况，我们会继续跟进。
             如果问题已解决或不再需要，可以直接关闭此 Issue。
             
-            **如果 3 天内没有回复，此 Issue 将自动关闭。**
+            **如果 7 天内没有回复，此 Issue 将自动关闭。**
           close-issue-message: |
             🔒 由于长时间没有活动，此 Issue 已自动关闭。
             
